@@ -109,28 +109,32 @@ button:hover {
 
 
 .contenedor-boton-atras {
-  margin: 10px 0;        /* separación debajo del menú */
-  text-align: left;       /* alinea contenido a la izquierda */
+  margin: 0;           /* quita el espacio extra debajo del menú */
+  text-align: left;     /* alinea a la izquierda */
 }
 
 .btn-atras {
-  display: inline-flex;    /* inline para que no ocupe todo el ancho */
+  display: inline-flex;
   align-items: center;
-  gap: 4px;               /* espacio entre ícono y texto */
-  padding: 4px 8px;       /* pequeño */
-  background-color: #817c6c;
+  justify-content: center; /* centra el contenido dentro del botón */
+  gap: 4px;
+  padding: 4px;          /* reduce el tamaño interno */
+  width: 36px;           /* hace el botón cuadrado */
+  height: 36px;          /* ancho = alto -> cuadrado */
+  background-color: #ffc107;
   border: none;
-  border-radius: 6px;
-  font-size: 14px;        /* más pequeño */
+  border-radius: 6px;    /* pequeño redondeado, casi cuadrado */
+  font-size: 0;          /* oculta texto si solo quieres ícono cuadrado */
   cursor: pointer;
 }
 
 .btn-atras:hover {
-  background-color: #080702;
+  background-color: #e0a800;
 }
 
 .btn-atras .icono-boton {
-  width: 16px;            /* ícono pequeño */
-  height: 16px;
+  width: 20px;           /* ícono visible dentro del cuadrado */
+  height: 20px;
 }
+
 
