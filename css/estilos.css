@@ -1,0 +1,136 @@
+/* ===========================
+   CONFIGURACIÓN GLOBAL
+=========================== */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+
+body.layout {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background: #f1f1f1;
+}
+
+
+main {
+    flex: 1;
+    padding: 20px;
+}
+
+
+/* ===========================
+   MENÚ
+=========================== */
+.menu {
+    background: #333;
+    padding: 10px;
+}
+
+
+.menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+
+.menu a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+
+.menu a:hover {
+    color: #ffcc00;
+}
+
+
+/* ===========================
+   FORMULARIOS
+=========================== */
+.contenedor {
+    max-width: 500px;
+    margin: auto;
+    padding: 25px;
+    background: white;
+    border-radius: 10px;
+}
+
+
+label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+
+input, textarea, button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 8px;
+    border-radius: 5px;
+    border: 1px solid #aaa;
+}
+
+
+button {
+    margin-top: 20px;
+    background: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+
+button:hover {
+    background: #45a049;
+}
+
+
+/* ===========================
+   FOOTER STICKY
+=========================== */
+.footer {
+    text-align: center;
+    padding: 20px;
+    background: #333;
+    color: white;
+    font-size: 16px;
+}
+
+
+
+.contenedor-boton-atras {
+  margin: 10px 0;        /* separación debajo del menú */
+  text-align: left;       /* alinea contenido a la izquierda */
+}
+
+.btn-atras {
+  display: inline-flex;    /* inline para que no ocupe todo el ancho */
+  align-items: center;
+  gap: 4px;               /* espacio entre ícono y texto */
+  padding: 4px 8px;       /* pequeño */
+  background-color: #817c6c;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;        /* más pequeño */
+  cursor: pointer;
+}
+
+.btn-atras:hover {
+  background-color: #080702;
+}
+
+.btn-atras .icono-boton {
+  width: 16px;            /* ícono pequeño */
+  height: 16px;
+}
+
